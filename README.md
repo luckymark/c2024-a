@@ -13,7 +13,6 @@
    1. 在Clion中注册github账号 https://www.jetbrains.com/help/clion/github.html 
    2. 打开github中的项目 https://www.jetbrains.com/help/clion/manage-projects-hosted-on-github.html 
 3. 修改、提交代码：https://www.jetbrains.com/help/clion/using-git-integration.html
-4. 请求老师 review 代码的方法：https://www.jetbrains.com/help/clion/work-with-github-pull-requests.html
 
 ## 参考
 
