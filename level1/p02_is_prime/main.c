@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include<math.h>
 bool isprime(unsigned long long n) {
 	int a = sqrt(n);
 	for(int i = 2; i <= a; ++i) {
