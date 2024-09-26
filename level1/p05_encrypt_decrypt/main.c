@@ -37,8 +37,8 @@ char *decrypt(char *code, int id) {
 	return res;
 }
 int main() {
-	char *res = "hello world";
-	printf("%s\n", res);
+	char *res[100];
+	scanf("%s",res);
 	res = encrypt(res, 16);
 	printf("%s\n", res);
 	res = decrypt(res, 16);
