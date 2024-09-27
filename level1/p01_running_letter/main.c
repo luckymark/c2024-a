@@ -1,6 +1,7 @@
 #include<Windows.h>
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 
 int getConsoleWidthAAA(HANDLE* houtput,CONSOLE_SCREEN_BUFFER_INFO* binfo) {
 	*houtput = GetStdHandle(STD_OUTPUT_HANDLE);
