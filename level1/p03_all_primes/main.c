@@ -18,6 +18,6 @@ int main() {
 		}
 	}
 	clock_t tnow = clock();
-	printf("消耗了%ld毫秒", tnow - tprev);
+	printf("with %ld ms consumed", tnow - tprev);
 	return 0;
 }
