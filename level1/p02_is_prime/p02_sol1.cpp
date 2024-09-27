@@ -16,8 +16,8 @@ int main() {
         }
     }
     if(flag == 1) {
-        cout << "是素数" << endl;
+        cout << "is Prime" << endl;
     }else {
-        cout << "不是素数" << endl;
+        cout << "isn't Prime" << endl;
     }
 }

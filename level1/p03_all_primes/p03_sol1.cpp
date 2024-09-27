@@ -15,14 +15,14 @@ int main() {
             }
         }
         if (flag == 1) {
-            cout << n <<"æ˜¯ç´ æ•°" << endl;
+            cout << n <<"is Prime" << endl;
         }
         else {
-            cout << n <<"ä¸æ˜¯ç´ æ•°" << endl;
+            cout << n <<"isn't Prime" << endl;
         }
     }
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    cout << "ç¨‹åºè¿è¡Œæ—¶é—´ï¼š" << duration.count() << " æ¯«ç§’" << endl;
+    cout << "³ÌĞòÔËĞĞÊ±¼ä" << duration.count() << " haomiao" << endl;
     return 0;
 }
