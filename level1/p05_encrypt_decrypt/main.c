@@ -37,12 +37,13 @@ char *decrypt(char *code, int id) {
 	return res;
 }
 int main() {
-	char *res[100];
-	scanf("%s",res);
-	res = encrypt(res, 16);
-	printf("%s\n", res);
-	res = decrypt(res, 16);
-	printf("%s\n", res);
-	free(res);
+	char input[100];
+	scanf("%s",input);
+	char *enc = encrypt(input, 16);
+	printf("%s\n", enc);
+	char* dec = decrypt(input, 16);
+	printf("%s\n", input);
+	free(enc);
+	free(dec);
 	return 0;
 }
