@@ -23,6 +23,6 @@ int main() {
     }
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    cout << "程序运行时间" << duration.count() << " haomiao" << endl;
+    cout << "程序运行时间为" << duration.count() << "毫秒" << endl;
     return 0;
 }
