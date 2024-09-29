@@ -21,7 +21,7 @@ public:
 vector<goods> vgoods;
 void load() {
 	fstream file;
-	file.open("D:\\Homework\\level1\\p10_warehouse\\goods.txt", ios::in);
+	file.open("我不知道在哪/goods.txt", ios::in);
 	if(file.is_open()) {
 		size_t i, nu;
 		string n;
