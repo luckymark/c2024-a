@@ -17,6 +17,7 @@ public:
 	//先假定有10关
 	int level();
 	bool pass();
+	void has_ended();
 private:
 	//由于最外层置空，x范围为1-14，y范围为1-10
 	void draw(int type, int x, int y);

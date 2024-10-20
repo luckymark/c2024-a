@@ -1,3 +1,4 @@
+#pragma optimize("t", on)
 #include "Graphic_Logic.h"
 #include "Game_Logic.h"
 #include<Windows.h>

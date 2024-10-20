@@ -4,10 +4,23 @@
 #include <fstream>
 #include<conio.h>
 using namespace std;
+#if defined _MSVC_LANG && !defined _DEBUG // MSVC RELEASE
+#define _ASSERT_(expr, msg) __assume(expr)
+#elif defined _DEBUG // DEBUG
+#define _ASSERT_(expr, msg)                                 \
+    do {    									            \
+        if(!expr) {     					                \
+    		MessageBox(NULL, _T(msg), _T("Error"), MB_OK);  \
+            exit(-1);									    \
+        }												    \
+    } while(false);
+#else // OTHERS RELEASE
+#define _ASSERT_(expr, msg)
+#endif
 Game_Logic::Game_Logic() {
 	fstream file;
 	file.open("maps.txt", ios::in);
-	_STL_ASSERT(file.is_open(), "File opening failed");
+	_ASSERT_(file.is_open(), "File opening failed");
 	boards = vector<vector<vector<int>>>(10, vector<vector<int>>(10, vector<int>(14)));
 	player_poses = vector<vector<int>>(10, vector<int>(2));
 	for(int i = 0; i < 10; ++i) {
@@ -43,7 +56,7 @@ vector<vector<int>> Game_Logic::move(char ch) {
                     board[y - 1][x] += 3;
                     player_poses[level_playing][0] = y - 1;
                 }
-                else if((board[y - 2][x] == 8) || board[y - 2][x] == 1) {
+                else if((board[y - 2][x] == 8) || board[y - 2][x] == 1 || board[y - 2][x] == 3) {
                     board[y][x] -= 3;
                     board[y - 1][x] += 3;
                     player_poses[level_playing][0] = y - 1;
@@ -71,7 +84,7 @@ vector<vector<int>> Game_Logic::move(char ch) {
                     board[y + 1][x] += 3;
                     player_poses[level_playing][0] = y + 1;
                 }
-                else if((board[y + 2][x] == 8) || board[y + 2][x] == 1) {
+                else if((board[y + 2][x] == 8) || board[y + 2][x] == 1 || board[y + 2][x] == 3) {
                     board[y][x] -= 3;
                     board[y + 1][x] += 3;
                     player_poses[level_playing][0] = y + 1;
@@ -99,7 +112,7 @@ vector<vector<int>> Game_Logic::move(char ch) {
                     board[y][x - 1] += 3;
                     player_poses[level_playing][1] = x - 1;
                 }
-                else if((board[y][x - 2] == 8) || board[y][x - 2] == 1) {
+                else if((board[y][x - 2] == 8) || board[y][x - 2] == 1 || board[y][x - 2] == 3) {
                     board[y][x] -= 3;
                     board[y][x - 1] += 3;
                     player_poses[level_playing][1] = x - 1;
@@ -127,7 +140,7 @@ vector<vector<int>> Game_Logic::move(char ch) {
                     board[y][x + 1] += 3;
                     player_poses[level_playing][1] = x + 1;
                 }
-                else if((board[y][x + 2] == 8) || board[y][x + 2] == 1) {
+                else if((board[y][x + 2] == 8) || board[y][x + 2] == 1 || board[y][x + 2] == 3) {
                     board[y][x] -= 3;
                     board[y][x + 1] += 3;
                     player_poses[level_playing][1] = x + 1;
@@ -171,7 +184,13 @@ void Game::play() {
 					int n = gamlog.level_playing;
                     gamlog = Game_Logic();
 					gamlog.level_playing = n;
-                    if(gralog.pass()) {
+                    if(gamlog.level_playing >= 9) {
+                        gralog.has_ended();
+                        gralog.level_playing = 0;
+                        gamlog.level_playing = 0;
+                        break;
+                    }
+                    else if(gralog.pass()) {
                         gamlog.level_playing++;
                         gralog.level_playing++;
                         gralog.init_level(gamlog.move('\0'));

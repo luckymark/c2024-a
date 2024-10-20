@@ -2,6 +2,19 @@
 #include <graphics.h>
 #include <stdexcept>
 using namespace std;
+#if defined _MSVC_LANG && !defined _DEBUG // MSVC RELEASE
+#define _ASSERT_(expr, msg) __assume(expr)
+#elif defined _DEBUG // DEBUG
+#define _ASSERT_(expr, msg)                                 \
+    do {    									            \
+        if(!expr) {     					                \
+    		MessageBox(NULL, _T(msg), _T("Error"), MB_OK);  \
+            exit(-1);									    \
+        }												    \
+    } while(false);
+#else // OTHERS RELEASE
+#define _ASSERT_(expr, msg)
+#endif
 Graphic_Logic::Graphic_Logic() {
 	initgraph(800, 600);
 	level_playing = 0;
@@ -94,14 +107,14 @@ void Graphic_Logic::menu() {
 	switch(multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
 		settextstyle(50, 0, _T("黑体"));
-		outtextxy(280, 100, _T("推箱子"));
+		outtextxy(320, 100, _T("推箱子"));
 	})) {
 		case 0:
 			return;
 		case 1:
 			exit(0);
 		default:
-			_STL_ASSERT(false, "Invalid button index");
+			_ASSERT_(false, "Invalid button index");
 	}
 }
 int Graphic_Logic::level() {
@@ -121,7 +134,7 @@ int Graphic_Logic::level() {
 	level_playing = 1 + multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
 		settextstyle(50, 0, _T("黑体"));
-		outtextxy(280, 100, _T("选择关卡"));
+		outtextxy(300, 100, _T("选择关卡"));
 	});
 	return level_playing;
 }
@@ -167,12 +180,12 @@ void Graphic_Logic::draw(int type, int x, int y) {
 			fillrectangle(x * 50, y * 50, (x + 1) * 50, (y + 1) * 50);
 			break;
 		default:
-			_STL_ASSERT(false, "Invalid type");
+			_ASSERT_(false, "Invalid type");
 			break;
 	}
 }
 void Graphic_Logic::init_level(const vector<vector<int>> &level) {
-	_STL_ASSERT((level.size() == 10 && level[0].size() == 14), "Invalid level message");
+	_ASSERT_((level.size() == 10 && level[0].size() == 14), "Invalid level message");
 	setbkcolor(RGB(255, 255, 255));
 	cleardevice();
 	for(int i = 0; i < 10; ++i) {
@@ -190,13 +203,23 @@ bool Graphic_Logic::pass() {
 	switch(multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
 		settextstyle(50, 0, _T("黑体"));
-		outtextxy(280, 100, _T("恭喜过关"));
+		outtextxy(280, 100, _T("恭喜过关！"));
 	})) {
 		case 0:
 			return true;
 		case 1:
 			return false;
 		default:
-			_STL_ASSERT(false, "Invalid button index");
+			_ASSERT_(false, "Invalid button index");
 	}
+}
+void Graphic_Logic::has_ended() {
+	vector<Button> buttons = {
+		Button(300, 300, 200, 50, _T("返回菜单"))
+	};
+	multibutton(buttons, []() {
+		settextcolor(RGB(0, 0, 0));
+		settextstyle(50, 0, _T("黑体"));
+		outtextxy(280, 100, _T("全部通关！"));
+	});
 }
