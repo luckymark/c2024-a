@@ -1,22 +1,12 @@
+#include "Common.hpp"
 #include "Game_Logic.h"
 #include "Graphic_Logic.h"
-#include<graphics.h>
+#include <graphics.h>
 #include <fstream>
-#include<conio.h>
+#include <conio.h>
+#pragma comment(lib, "winmm.lib")
+#include <mmsystem.h>
 using namespace std;
-#if defined _MSVC_LANG && !defined _DEBUG // MSVC RELEASE
-#define _ASSERT_(expr, msg) __assume(expr)
-#elif defined _DEBUG // DEBUG
-#define _ASSERT_(expr, msg)                                 \
-    do {    									            \
-        if(!expr) {     					                \
-    		MessageBox(NULL, _T(msg), _T("Error"), MB_OK);  \
-            exit(-1);									    \
-        }												    \
-    } while(false);
-#else // OTHERS RELEASE
-#define _ASSERT_(expr, msg)
-#endif
 Game_Logic::Game_Logic() {
 	fstream file;
 	file.open("maps.txt", ios::in);
@@ -165,6 +155,7 @@ bool has_ended(vector<vector<int>> &board) {
     return true;
 }
 void Game::play() {
+    PlaySound(_T("background.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
     Graphic_Logic gralog;
     Game_Logic gamlog;
     BeginBatchDraw();
@@ -175,15 +166,15 @@ void Game::play() {
         gamlog.level_playing = lv;
         gralog.init_level(gamlog.move('\0'));
         while(true) {
-            ExMessage msg = getmessage(EX_KEY); // 捕获键盘事件
+            ExMessage msg = getmessage(EX_KEY);
             if(msg.message == WM_KEYDOWN) {
-                char ch = msg.vkcode; // 获取按键代码
+                char ch = msg.vkcode;
                 auto _board = gamlog.move(ch);
                 gralog.init_level(_board);
                 if(has_ended(_board)) {
-					int n = gamlog.level_playing;
+                    int n = gamlog.level_playing;
                     gamlog = Game_Logic();
-					gamlog.level_playing = n;
+                    gamlog.level_playing = n;
                     if(gamlog.level_playing >= 9) {
                         gralog.has_ended();
                         gralog.level_playing = 0;
@@ -197,7 +188,7 @@ void Game::play() {
                     }
                     else {
                         gralog.level_playing = 0;
-						gamlog.level_playing = 0;
+                        gamlog.level_playing = 0;
                         break;
                     }
                 }

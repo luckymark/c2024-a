@@ -1,20 +1,8 @@
+#include "Common.hpp"
 #include "Graphic_Logic.h"
 #include <graphics.h>
 #include <stdexcept>
 using namespace std;
-#if defined _MSVC_LANG && !defined _DEBUG // MSVC RELEASE
-#define _ASSERT_(expr, msg) __assume(expr)
-#elif defined _DEBUG // DEBUG
-#define _ASSERT_(expr, msg)                                 \
-    do {    									            \
-        if(!expr) {     					                \
-    		MessageBox(NULL, _T(msg), _T("Error"), MB_OK);  \
-            exit(-1);									    \
-        }												    \
-    } while(false);
-#else // OTHERS RELEASE
-#define _ASSERT_(expr, msg)
-#endif
 Graphic_Logic::Graphic_Logic() {
 	initgraph(800, 600);
 	level_playing = 0;
@@ -46,7 +34,7 @@ public:
 			setbkcolor(RGB(188, 188, 188));
 		}
 		fillrectangle(x, y, x + width, y + height);
-		settextstyle(20, 0, _T("黑体"));
+		settextstyle(20, 0, _Tstr(黑体));
 		settextcolor(RGB(0, 0, 0));
 		int textWidth = textwidth(text);
 		int textHeight = textheight(text);
@@ -101,13 +89,13 @@ template<class Function> int multibutton(vector<Button> &buttons, Function fn) {
 }
 void Graphic_Logic::menu() {
 	vector<Button> buttons = {
-		Button(300, 200, 200, 50, _T("开始游戏")),
-		Button(300, 300, 200, 50, _T("退出游戏"))
+		Button(300, 200, 200, 50, _Tstr(开始游戏)),
+		Button(300, 300, 200, 50, _Tstr(退出游戏))
 	};
 	switch(multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
-		settextstyle(50, 0, _T("黑体"));
-		outtextxy(320, 100, _T("推箱子"));
+		settextstyle(50, 0, _Tstr(黑体));
+		outtextxy(320, 100, _Tstr(推箱子));
 	})) {
 		case 0:
 			return;
@@ -119,22 +107,22 @@ void Graphic_Logic::menu() {
 }
 int Graphic_Logic::level() {
 	vector<Button> buttons = {
-		Button(100, 200, 80, 80, _T("第一关")),
-		Button(230, 200, 80, 80, _T("第二关")),
-		Button(360, 200, 80, 80, _T("第三关")),
-		Button(490, 200, 80, 80, _T("第四关")),
-		Button(620, 200, 80, 80, _T("第五关")),
-		Button(100, 320, 80, 80, _T("第六关")),
-		Button(230, 320, 80, 80, _T("第七关")),
-		Button(360, 320, 80, 80, _T("第八关")),
-		Button(490, 320, 80, 80, _T("第九关")),
-		Button(620, 320, 80, 80, _T("第十关")),
-		Button(300, 500, 200, 50, _T("返回菜单"))
+		Button(100, 200, 80, 80, _Tstr(第一关)),
+		Button(230, 200, 80, 80, _Tstr(第二关)),
+		Button(360, 200, 80, 80, _Tstr(第三关)),
+		Button(490, 200, 80, 80, _Tstr(第四关)),
+		Button(620, 200, 80, 80, _Tstr(第五关)),
+		Button(100, 320, 80, 80, _Tstr(第六关)),
+		Button(230, 320, 80, 80, _Tstr(第七关)),
+		Button(360, 320, 80, 80, _Tstr(第八关)),
+		Button(490, 320, 80, 80, _Tstr(第九关)),
+		Button(620, 320, 80, 80, _Tstr(第十关)),
+		Button(300, 500, 200, 50, _Tstr(返回菜单))
 	};
 	level_playing = 1 + multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
-		settextstyle(50, 0, _T("黑体"));
-		outtextxy(300, 100, _T("选择关卡"));
+		settextstyle(50, 0, _Tstr(黑体));
+		outtextxy(300, 100, _Tstr(选择关卡));
 	});
 	return level_playing;
 }
@@ -197,13 +185,13 @@ void Graphic_Logic::init_level(const vector<vector<int>> &level) {
 }
 bool Graphic_Logic::pass() {
 	vector<Button> buttons = {
-		Button(300, 200, 200, 50, _T("下一关")),
-		Button(300, 300, 200, 50, _T("返回菜单"))
+		Button(300, 200, 200, 50, _Tstr(下一关)),
+		Button(300, 300, 200, 50, _Tstr(返回菜单))
 	};
 	switch(multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
-		settextstyle(50, 0, _T("黑体"));
-		outtextxy(280, 100, _T("恭喜过关！"));
+		settextstyle(50, 0, _Tstr(黑体));
+		outtextxy(280, 100, _Tstr(恭喜过关！));
 	})) {
 		case 0:
 			return true;
@@ -215,11 +203,11 @@ bool Graphic_Logic::pass() {
 }
 void Graphic_Logic::has_ended() {
 	vector<Button> buttons = {
-		Button(300, 300, 200, 50, _T("返回菜单"))
+		Button(300, 300, 200, 50, _Tstr(返回菜单))
 	};
 	multibutton(buttons, []() {
 		settextcolor(RGB(0, 0, 0));
-		settextstyle(50, 0, _T("黑体"));
-		outtextxy(280, 100, _T("全部通关！"));
+		settextstyle(50, 0, _Tstr(黑体));
+		outtextxy(280, 100, _Tstr(全部通关！));
 	});
 }

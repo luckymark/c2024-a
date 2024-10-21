@@ -1,7 +1,7 @@
 #pragma once
 #ifndef GAME_LOGIC_H
 #define GAME_LOGIC_H 1
-#include<vector>
+#include <vector>
 /*
  * 游戏逻辑类
  * 根据画面逻辑类的声明，游戏棋盘为14*10
