@@ -100,5 +100,6 @@ int main() {
 	printf("%d\n", b);
 	b = find_kth_target(ln, 2, 5);
 	printf("%d\n", b);
+	free_listnode(ln);
 	return 0;
 }
