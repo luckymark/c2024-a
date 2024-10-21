@@ -20,6 +20,7 @@ add_executable(p08_push_boxes
     p08_push_boxes/Graphic_Logic.h
     p08_push_boxes/Game_Logic.cpp
     p08_push_boxes/Game_Logic.h
+    p08_push_boxes/Common.hpp
 )
 
 add_executable(p09_linked_list p09_linked_list/main.c)
