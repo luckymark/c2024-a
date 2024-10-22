@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-
+//inventory.txt要和exe放在一块
 using namespace std;
 
 struct InventoryItem {
