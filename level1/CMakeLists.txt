@@ -16,13 +16,13 @@ add_executable(p05_encrypt_decrypt p05_encrypt_decrypt/main.cpp)
 
 add_executable(p06_hanoi p06_hanoi/main.cpp)
 
-add_executable(p07_maze p07_maze/main.c)
+add_executable(p07_maze p07_maze/main.cpp)
 
-add_executable(p08_push_boxes p08_push_boxes/main.c)
+add_executable(p08_push_boxes p08_push_boxes/main.cpp)
 
-add_executable(p09_linked_list p09_linked_list/main.c)
+add_executable(p09_linked_list p09_linked_list/main.cpp)
 
-add_executable(p10_warehouse p10_warehouse/main.c)
+add_executable(p10_warehouse p10_warehouse/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fexec-charset=GBK")
 
