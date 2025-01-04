@@ -1,0 +1,23 @@
+﻿  Chess.cpp
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(20,45): error C2065: “EX_SHOWCONSOLE”: 未声明的标识符
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(48,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(48,51): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(49,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(49,51): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(50,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(50,48): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(81,8): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(82,8): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(140,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(141,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(143,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(144,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(145,13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(151,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(162,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(173,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(184,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(324,9): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(325,9): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(329,44): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+C:\Users\17419\Desktop\五子棋大作业\五子棋ai\Chess.cpp(330,44): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
