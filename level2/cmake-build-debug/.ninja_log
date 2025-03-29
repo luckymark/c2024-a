@@ -1,0 +1,6 @@
+# ninja log v6
+4	144	7512900227790690	CMakeFiles/SkipList.dir/SkipList/skiplist.cpp.obj	384431d2fed59c61
+8	589	7512908853239852	CMakeFiles/skiplist.dir/SkipList/skiplist.cpp.obj	908e22e2bda636fb
+590	769	7512908859061379	skiplist.exe	2a5091e17683758c
+9	583	7512910776676548	CMakeFiles/skiplist.dir/SkipList/skiplist.cpp.obj	908e22e2bda636fb
+585	757	7512910782430969	skiplist.exe	2a5091e17683758c

@@ -1,0 +1,20 @@
+﻿  Chess.cpp
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(74,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(74,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(75,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(75,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(88,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(89,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(90,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(91,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(92,13): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(99,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(111,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(113,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(126,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(127,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(139,10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(141,13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(161,8): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\AIgomuku\Chess.cpp(162,8): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  AIgomuku.vcxproj -> D:\homeworkOfEmerson\c2024-a-wcs\课程设计\AIgomuku\x64\Debug\AIgomuku.exe

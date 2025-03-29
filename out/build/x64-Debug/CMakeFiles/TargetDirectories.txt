@@ -1,0 +1,17 @@
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p01_running_letter.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p02_is_prime.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p03_all_primes.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p04_goldbach.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p05_encrypt_decrypt.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p06_hanoi.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p07_maze.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p08_push_boxes.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p09_linked_list.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/p10_warehouse.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/edit_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level1/CMakeFiles/rebuild_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level2/CMakeFiles/skiplist.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level2/CMakeFiles/edit_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/out/build/x64-Debug/level2/CMakeFiles/rebuild_cache.dir

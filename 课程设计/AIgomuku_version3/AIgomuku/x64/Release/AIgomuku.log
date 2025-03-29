@@ -1,0 +1,11 @@
+﻿  AI.cpp
+C:\Users\Emerson\Desktop\AIgomuku\AIgomuku\AI.cpp(106,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  ChessGame.cpp
+  main.cpp
+C:\Users\Emerson\Desktop\AIgomuku\AIgomuku\main.cpp(8,26): warning C4305: “参数”: 从“double”到“float”截断
+  正在生成代码
+  1 of 335 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  AIgomuku.vcxproj -> C:\Users\Emerson\Desktop\AIgomuku\x64\Release\AIgomuku.exe

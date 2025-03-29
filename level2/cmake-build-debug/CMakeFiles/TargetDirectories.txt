@@ -1,0 +1,3 @@
+D:/homeworkOfEmerson/c2024-a-wcs/level2/cmake-build-debug/CMakeFiles/skiplist.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

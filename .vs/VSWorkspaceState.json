@@ -1,0 +1,16 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\\u8BFE\u7A0B\u8BBE\u8BA1",
+    "\\\u8BFE\u7A0B\u8BBE\u8BA1\\AIgomuku",
+    "\\\u8BFE\u7A0B\u8BBE\u8BA1\\AIgomuku\\AIgomuku"
+  ],
+  "SelectedNode": "\\\u8BFE\u7A0B\u8BBE\u8BA1\\AIgomuku\\AIgomuku.sln",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,137 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "level1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "p01_running_letter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p01_running_letter-Debug-62845eb72c9ec224b279.json",
+					"name" : "p01_running_letter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p02_is_prime::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p02_is_prime-Debug-25d7c375f52e3cefd691.json",
+					"name" : "p02_is_prime",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p03_all_primes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p03_all_primes-Debug-0ef2784764c0a9fc3239.json",
+					"name" : "p03_all_primes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p04_goldbach::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p04_goldbach-Debug-738071e94abaf165c1d5.json",
+					"name" : "p04_goldbach",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p05_encrypt_decrypt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p05_encrypt_decrypt-Debug-c0c9004730ffdd7da7fa.json",
+					"name" : "p05_encrypt_decrypt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p06_hanoi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p06_hanoi-Debug-e806faa612de063447a9.json",
+					"name" : "p06_hanoi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p07_maze::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p07_maze-Debug-d284c321b235871770f4.json",
+					"name" : "p07_maze",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p08_push_boxes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p08_push_boxes-Debug-0aa3021d59230b9c0f2a.json",
+					"name" : "p08_push_boxes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p09_linked_list::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p09_linked_list-Debug-5a219517502435259896.json",
+					"name" : "p09_linked_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p10_warehouse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p10_warehouse-Debug-77b0a64e04f5b509c0f8.json",
+					"name" : "p10_warehouse",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug",
+		"source" : "D:/homeworkOfEmerson/c2024-a-wcs/level1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

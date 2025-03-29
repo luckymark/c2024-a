@@ -1,0 +1,12 @@
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p01_running_letter.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p02_is_prime.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p03_all_primes.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p04_goldbach.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p05_encrypt_decrypt.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p06_hanoi.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p07_maze.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p08_push_boxes.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p09_linked_list.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/p10_warehouse.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/homeworkOfEmerson/c2024-a-wcs/level1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

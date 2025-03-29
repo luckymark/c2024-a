@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p03_all_primes/p03_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p05_encrypt_decrypt/p05_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p06_hanoi/p06_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p07_maze/p07_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p08_push_boxes/p08_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p09_linked_list/p09_sol1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/p10_warehouse/p10_sol1.cpp" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
