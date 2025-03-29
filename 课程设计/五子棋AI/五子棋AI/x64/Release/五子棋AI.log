@@ -1,0 +1,8 @@
+﻿  AI.cpp
+C:\Users\l\Desktop\五子棋AI\五子棋AI\五子棋AI\AI.cpp(159,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  11 of 461 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  五子棋AI.vcxproj -> C:\Users\l\Desktop\五子棋AI\五子棋AI\x64\Release\五子棋AI.exe
