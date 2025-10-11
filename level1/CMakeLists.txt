@@ -14,8 +14,14 @@ add_executable(p06_hanoi p06_hanoi/main.c)
 
 add_executable(p07_maze p07_maze/main.c)
 
-add_executable(p08_push_boxes p08_push_boxes/main.c)
+# p08我单独创建一个sln文件以运行
 
 add_executable(p09_linked_list p09_linked_list/main.c)
 
-add_executable(p10_warehouse p10_warehouse/main.c)
+add_executable(p10_warehouse p10_warehouse/main.cpp)
+
+add_executable(Ex1_Queue Ex1_Nodes/queue.c)
+
+add_executable(Ex1_Stack Ex1_Nodes/stack.c)
+
+add_executable(Ex2_Calculator Ex2_Calculator/calculator.cpp)

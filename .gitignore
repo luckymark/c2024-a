@@ -1,4 +1,12 @@
 /.idea/
 /cmake-build-debug/
-
-*.exe
+.git/
+.vs/
+.out/
+out/
+level1/p08_push_boxes/.vs
+level1/p08_push_boxes/p08_push_boxes/x64
+level1/p08_push_boxes/x64
+Five_Chess/.vs
+Five_Chess/x64
+Five_Chess/Five_Chess/x64
